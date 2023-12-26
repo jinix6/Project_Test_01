@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Value Display</title>
+</head>
+<body>
+
+  <input type="text" id="inputField" placeholder="Enter text">
+  <button onclick="showInputValue()">Show Value</button>
+  <p id="text">none</p>
+  <script>
+    
+    
+    function showInputValue() {
+  var inputValue = document.getElementById('inputField').value;
+  document.getElementById('text').textContent = "Test= " + inputValue;
+}
+
+
+  </script>
+
+</body>
+</html>
